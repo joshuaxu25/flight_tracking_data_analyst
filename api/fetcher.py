@@ -1,8 +1,10 @@
 import requests
 from api.config import settings
-
+from project.config import settings
 # ROOT_URL = "https://opensky-network.org/api"
 ROOT_URL = settings.ROOT_URL
+START_DT = project_settings.START_DATE_TIME
+END_DT = project_settings.END_DATE_TIME
 
 
 def states_accessor():
