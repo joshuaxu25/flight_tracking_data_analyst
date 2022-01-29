@@ -1,5 +1,5 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.pdf
+__pycache__
+data_to_ignore/
 *.log
-
+*.out
+*.pdf
