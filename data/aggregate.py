@@ -10,7 +10,7 @@ def fixed_dataset() -> pd.DataFrame:
         pd.read_csv(file, parse_dates=["firstseen", "lastseen", "day"])
         # for file in Path("path/to/folder").glob("flightlist_*.csv.gz")
         for file in
-        Path("C:/Users/mowgl/Documents/Python/MIAE_Python_Tutorial/MIAE-Python/data_set").glob("flightlist_*.csv.gz")
+        Path("C:/Users/Joshua Xu/Documents/McGill 2021-2022/python_tutorial").glob("flight_list_*.csv.gz")
     )
     return flight_list
 
