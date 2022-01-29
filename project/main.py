@@ -1,13 +1,12 @@
 from api import fetcher
-
+from data import aggregate
 
 # Let's start in main.py showing some wrapper patterns and depicting method attributes.
 # Explore with pushes and pulls and view on GitHub!
 # git remote add new_origin https://github.com/mowglu/MIAE-Python and then use git pull new_origin <<commit>>
 def main_wrapper():
     # intrinsic methods
-    print(
-        f"This is the start of our python project, we will be starting off with this wrapper main function called {main_wrapper.__name__}")
+    print(f"This is the start of our python project, we will be starting off with this wrapper main function called {main_wrapper.__name__}")
 
     # Stuff here - wrapper!
     # project structuring for modularity, maintainability, and separation of concerns.
@@ -20,6 +19,7 @@ def main_wrapper():
     # API fetcher examples
     fetcher.states_accessor()
     # fetcher.tracks_accessor()
+    flight_list = aggregate.fixed_dataset()
 
     #4. Finish API fetcher. Also add some data folders in gitignore. Like data_to_ignore (with sample example) Also utils example
 

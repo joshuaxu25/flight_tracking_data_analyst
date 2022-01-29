@@ -1,4 +1,5 @@
 __pycache__
+dataset/
 data_to_ignore/
 *.log
 *.out
